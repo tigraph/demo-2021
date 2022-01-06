@@ -4,10 +4,10 @@ use std::io::{Result, Write};
 use rand::distributions::Alphanumeric;
 use rand::Rng;
 
+use crate::{MAX_FRIENDS_COUNT, MIN_FRIENDS_COUNT};
+
 const ROW_COUNT: i64 = 10000;
 const STEP: i64 = 1000;
-const MIN_FRIENDS_COUNT: i64 = 3;
-const MAX_FRIENDS_COUNT: i64 = 10;
 
 pub fn append_ddl(mut writer: &File) -> Result<()> {
     let all_tables_ddl = r"

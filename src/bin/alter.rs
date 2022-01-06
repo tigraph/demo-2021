@@ -1,6 +1,6 @@
 use std::fs::File;
 
-use timatch_demo::alter::{
+use timatch_demo::alter_data_generator::{
     append_ddl, append_orders_dml, append_relationships_dml, append_users_dml,
 };
 
