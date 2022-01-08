@@ -29,7 +29,8 @@ name VARCHAR(64)
 CREATE TABLE relationships
 (
 user_id   BIGINT,
-friend_id BIGINT
+friend_id BIGINT,
+PRIMARY KEY (user_id, friend_id) CLUSTERED
 );
 
 ";
