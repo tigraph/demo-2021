@@ -44,7 +44,7 @@ pub fn gen_relationships_records(mut writer: csv::Writer<File>) -> csv::Result<(
 
     let mut count = 0;
     let mut i = 0;
-    while i < RECORD_COUNT && count < RECORD_COUNT {
+    while i < RECORD_COUNT {
         let mut friends_count = rng.gen_range(MIN_FRIENDS_COUNT..MAX_FRIENDS_COUNT);
         while friends_count > 0 {
             let friend_id = rng.gen_range(0..RECORD_COUNT);
